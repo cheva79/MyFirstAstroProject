@@ -1,8 +1,13 @@
 ---
 const platform = "github";
 const username = "cheva79";
+const platform2 = "twitter";
 ---
 
 <footer>
-  <p>Más información sobre mis proyectos en <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+  <p>Más información sobre mis proyectos en:</p>
+    <ul>
+        <li><p><a href={`https://www.${platform}.com/${username}`}>{platform}</a></p></li>
+        <li><p><a href={`https://www.${platform2}.com/${username}`}>{platform2}</a></p></li>
+    </ul>
 </footer>
