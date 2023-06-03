@@ -1,35 +1,15 @@
 ---
-import '../styles/global.css';
-import Header from '../componentes/Header.astro';
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "My Astro Learning Blog";
----
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-		<style>
-			h1 {
-			color: purple;
-			font-size: 4rem;
-		}
-		</style>
-	</head>
-	<body>
-		<Header />
-		<h1>{pageTitle}</h1>
-		<p>En esta seccion esteremos discutiendo los temas mas inportantes</p>
+---
+<BaseLayout pageTitle={pageTitle}>
+	<h2>Mi impresionante subtítulo del blog</h2>
+  		<p>En esta seccion esteremos discutiendo los temas mas inportantes</p>
 		<ul>
       		<li><a href="/posts/post-1/">Post 1</a></li>
 			<li><a href="/posts/post-2/">Post 2</a></li>
       		<li><a href="/posts/post-3/">Post 3</a></li>
     	</ul>
-		<script>
-			import "../scripts/menu.js";
-		</script>
-	</body>
-</html>
+</BaseLayout>
+
