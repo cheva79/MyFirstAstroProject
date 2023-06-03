@@ -42,20 +42,25 @@ html {
       color: #ffffff;
       text-align: left;
   }
+
   tr{
     border-bottom: 2px solid #009879;
     background-color: #f3f3f3;
     font-weight: bold;
     color: #009879;
+    text-align: center;
   }
+
   th {
     color: blue;
+    text-align: center;
   }
 
   td {
     color: black;
     border: #ff9776;
     padding: 10px 10px;
+    text-align: center;
   }
 
   /* nav styles */
