@@ -1,15 +1,21 @@
 ---
-const platform = "github";
-const username = "cheva79";
-const platform2 = "twitter";
----
+import Social from './Social.astro';
 
+---
+<style>
+    footer {
+      display: flex;
+      gap: 1rem;
+      margin-top: 20rem;
+    }
+  </style>
 <footer>
   <p>Más información sobre mis proyectos en:</p>
     <ul>
-        <li><p><a href={`https://www.${platform}.com/${username}`}>{platform}</a></p></li>
-        <li><p><a href={`https://www.${platform2}.com/${username}`}>{platform2}</a></p></li>
-        <button><img src='https://cdn.icon-icons.com/icons2/1637/PNG/256/laliga_109475.png' width = "50" height = "50" /></button>
-        
+        <li><Social platform="twitter"/></li>
+        <li><Social platform="github"/></li>
+        <li><Social platform="youtube"/></li>
     </ul>
+    <img src='https://cdn.icon-icons.com/icons2/1637/PNG/256/laliga_109475.png' width = "50" height = "50" />
+    
 </footer>
