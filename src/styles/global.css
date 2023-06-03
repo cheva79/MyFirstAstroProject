@@ -9,6 +9,13 @@ html {
     max-width: 80ch;
     padding: 1rem;
     line-height: 1.5;
+    align-items: center;
+    text-align: center;
+  }
+
+  div {
+    align-items: center;
+    text-align: center;
   }
   
   * {
@@ -22,6 +29,20 @@ html {
 
   ul li{
     display: inline;
+  }
+
+  table{
+    align-items: center;
+    text-align: center;
+    border: #ff9776;
+  }
+  th {
+    color: blue;
+  }
+
+  td {
+    color: black;
+    border: #ff9776;
   }
 
   /* nav styles */
