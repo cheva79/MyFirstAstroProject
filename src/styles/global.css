@@ -32,9 +32,21 @@ html {
   }
 
   table{
-    align-items: center;
-    text-align: center;
-    border: #ff9776;
+      border-collapse: collapse;
+      margin: 25px 0;
+      font-size: 0.9em;
+      font-family: sans-serif;
+      min-width: 400px;
+      box-shadow: 0 0 20px rgba(173, 70, 70, 0.15);
+      background-color: #94ab66;
+      color: #ffffff;
+      text-align: left;
+  }
+  tr{
+    border-bottom: 2px solid #009879;
+    background-color: #f3f3f3;
+    font-weight: bold;
+    color: #009879;
   }
   th {
     color: blue;
@@ -43,6 +55,7 @@ html {
   td {
     color: black;
     border: #ff9776;
+    padding: 10px 10px;
   }
 
   /* nav styles */
