@@ -10,79 +10,89 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 	p {
 		text-align: justify;
 	}
+	div {
+		display: flex;
+		
+	}
+	section {
+		padding: 10px;
+		border: 10px;
+		margin: 2px;
+	}
 </style>
 <BaseLayout pageTitle={pageTitle}>
-	<a
-		href="https://www.sport.es/es/noticias/futbol-internacional/hilal-quiere-anunciar-fichaje-leo-88247528"
-	>
-		<div>
-			<div>
-				<h3>
+	<div>
+		<section>
+			<a
+				href="https://www.sport.es/es/noticias/futbol-internacional/hilal-quiere-anunciar-fichaje-leo-88247528"
+				><h3>
 					Al-Hilal quiere anunciar el fichaje de Leo Messi el 6 de
 					junio
-				</h3>
+				</h3></a
+			>
 
-				<p>
-					El equipo de Arabia Saudí Al-Hillal tiene la intención de
-					anunciar el fichaje de Leo Messi el próximo martes 6 de
-					junio, según ha podido saber SPORT de fuentes que provienen
-					del seno del club. El Al-Hilal se ha puesto esta fecha como
-					clave para tener el sí definitivo del jugador y poder
-					activar todo el protocolo preparado con el fin de que la
-					noticia tenga un eco mundial y, al mismo tiempo, sirva para
-					empezar a exhibir Arabia Saudí al mundo.
-				</p>
-				<img
-					src="https://estaticos-cdn.sport.es/clip/d7a3223c-baf2-4899-a1a3-a8c1b3334bf1_16-9-aspect-ratio_default_0.jpg"
-					width="500"
-					alt=""
-				/>
-			</div>
-		<div>
-			<a href="https://www.marca.com/futbol/real-madrid/2023/06/04/647c6247c83c250028cf903e-directo.html"><h3 >
-				Benzema se va del Real Madrid | Última hora y reacciones a
-				la salida de Karim a Arabia Saudí, en directo
-			</h3></a>
+			<p>
+				El equipo de Arabia Saudí Al-Hillal tiene la intención de
+				anunciar el fichaje de Leo Messi el próximo martes 6 de junio,
+				según ha podido saber SPORT de fuentes que provienen del seno
+				del club. El Al-Hilal se ha puesto esta fecha como clave para
+				tener el sí definitivo del jugador y poder activar todo el
+				protocolo preparado con el fin de que la noticia tenga un eco
+				mundial y, al mismo tiempo, sirva para empezar a exhibir Arabia
+				Saudí al mundo.
+			</p>
+			<img
+				src="https://estaticos-cdn.sport.es/clip/d7a3223c-baf2-4899-a1a3-a8c1b3334bf1_16-9-aspect-ratio_default_0.jpg"
+				width="500"
+				alt=""
+			/>
+		</section>
+		<section>
+			<a
+				href="https://www.marca.com/futbol/real-madrid/2023/06/04/647c6247c83c250028cf903e-directo.html"
+				><h3>
+					Benzema se va del Real Madrid | Última hora y reacciones a
+					la salida de Karim a Arabia Saudí, en directo
+				</h3></a
+			>
 
 			<p>
 				El francés termina su etapa en el club blanco como titular
-				frente al Athletic de Bilbao en el partido que se disputa
-				esta tarde en el Santiago Bernabéu. La afición podrá
-				despedirse del capitán. ¿Habrá ovación en el minuto 9?
+				frente al Athletic de Bilbao en el partido que se disputa esta
+				tarde en el Santiago Bernabéu. La afición podrá despedirse del
+				capitán. ¿Habrá ovación en el minuto 9?
 			</p>
 			<img
 				src="https://phantom-marca.unidadeditorial.es/cf9749522892d64021f834e3a95bf188/resize/660/f/webp/assets/multimedia/imagenes/2023/06/04/16858816047586.jpg"
 				width="500"
 				alt=""
 			/>
+		</section>
 	</div>
-		</div>
-	</a>
-	<p>Principales enlaces y Posts</p>
-	<ul>
-		<li><a href="https://as.com/futbol/primera/">As</a></li>
-		<li>-</li>
-		<li>
-			<a href="https://www.marca.com/futbol/primera-division.html"
-				>Marca</a
-			>
-		</li>
-		<li>-</li>
-		<li><a href="https://www.sport.es/">Sports</a></li>
-		<li>-</li>
-		<li>
-			<a href="https://www.mundodeportivo.com/futbol/laliga"
-				>Mundo Deportivo</a
-			>
-		</li>
-		<li>-</li>
-		<li><a href="https://www.laliga.com/noticias?page=1">La Liga</a></li>
-	</ul>
-	<ul>
-		{
-			allPosts.map((post) => (
-				<BlogPost url={post.url} title={post.frontmatter.title} />
-			))
-		}
-	</ul>
 </BaseLayout>
+
+<p>Principales enlaces y Posts</p>
+<ul>
+	<li><a href="https://as.com/futbol/primera/">As</a></li>
+	<li>-</li>
+	<li>
+		<a href="https://www.marca.com/futbol/primera-division.html">Marca</a>
+	</li>
+	<li>-</li>
+	<li><a href="https://www.sport.es/">Sports</a></li>
+	<li>-</li>
+	<li>
+		<a href="https://www.mundodeportivo.com/futbol/laliga"
+			>Mundo Deportivo</a
+		>
+	</li>
+	<li>-</li>
+	<li><a href="https://www.laliga.com/noticias?page=1">La Liga</a></li>
+</ul>
+<ul>
+	{
+		allPosts.map((post) => (
+			<BlogPost url={post.url} title={post.frontmatter.title} />
+		))
+	}
+</ul>
