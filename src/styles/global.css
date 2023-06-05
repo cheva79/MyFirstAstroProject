@@ -1,133 +1,140 @@
 html {
-    background-color: #f1f5f9;
-    font-family: sans-serif;
-  }
-  
-  body {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 80ch;
-    padding: 1rem;
-    line-height: 1.5;
-    align-items: center;
-    text-align: center;
-  }
+  background-color: #f1f5f9;
+  font-family: sans-serif;
+}
 
-  div {
-    align-items: center;
-    text-align: center;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  h1 {
-    margin: 1rem 0;
-    font-size: 2.5rem;
-  }
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.5;
+  align-items: center;
+  text-align: center;
+}
 
-  ul li{
-    display: inline;
-  }
+div {
+  align-items: center;
+  text-align: center;
+}
 
-  table{
-      border-collapse: collapse;
-      margin: 25px 0;
-      font-size: 0.9em;
-      font-family: sans-serif;
-      min-width: 400px;
-      box-shadow: 0 0 20px rgba(173, 70, 70, 0.15);
-      background-color: #94ab66;
-      color: #ffffff;
-      text-align: left;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  tr{
-    border-bottom: 2px solid #015c4a;
-    background-color: #f3f3f3;
-    font-weight: bold;
-    color: #015c4a;
-    text-align: center;
-  }
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
 
-  th {
-    color: rgb(4, 4, 161);
-    text-align: center;
-  }
+ul li {
+  display: inline;
+}
 
-  td {
-    color: black;
-    border: #ff9776;
-    padding: 10px 10px;
-    text-align: center;
-  }
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(173, 70, 70, 0.15);
+  background-color: #94ab66;
+  color: #ffffff;
+  text-align: left;
+}
 
-  /* nav styles */
+tr {
+  border-bottom: 2px solid #015c4a;
+  background-color: #f3f3f3;
+  font-weight: bold;
+  color: #015c4a;
+  text-align: center;
+}
 
-  .hamburger {
-    padding-right: 20px;
-    cursor: pointer;
-  }
-  
-  .hamburger .line {
-    display: block;
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background-color: #ff9776;
-  }
+th {
+  color: rgb(4, 4, 161);
+  text-align: center;
+}
+
+td {
+  color: black;
+  border: #ff9776;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+/* nav styles */
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #ff9776;
+}
 
 .nav-links {
-    width: 100%;
-    top: 5rem;
-    left: 48px;
-    background-color: #ff9776;
-    display: flex;
-    margin: 0;
-  }
-  
-  .nav-links a {
-    display: block;
-    text-align: center;
-    padding: 10px 0;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .nav-links a:hover, a:focus {
-    background-color: #ff9776;
-  }
-  
-  .expanded {
-    display: unset;
-  }
-  
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: #f5d4ca;
+  display: flex;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+a:focus {
+  background-color: #ff9776;
+}
+
+.expanded {
+  display: unset;
+}
+
 @media screen and (min-width: 636px) {
   .nav-links {
-      margin-left: 5em;
-      display: block;
-      position: static;
-      width: auto;
-      background: none;
-    }
-  
-  .nav-links a {
-      display: inline-block;
-      padding: 15px 20px;
-    }
-  
-  .hamburger {
-      display: none;
-    }
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
   }
-html.dark {
-    background-color: #1c1951;
-    color: #fff;
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .div-blog {
+    display: inline-block;
+    padding: 15px 20px;
+  }
 }
-  
+
+html.dark {
+  background-color: #1c1951;
+  color: #fff;
+}
+
 .dark .nav-links a {
-    color: #fff;
+  color: #fff;
 }
