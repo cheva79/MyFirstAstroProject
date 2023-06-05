@@ -21,7 +21,7 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 	}
 </style>
 <BaseLayout pageTitle={pageTitle}>
-	<div>
+	<div class="nav-links">
 		<section>
 			<h5>Junio 03 2023</h5>
 			<a
@@ -74,7 +74,7 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 			/>
 		</section>
 	</div>
-	<div>
+	<div class="nav-links">
 		<section>
 			<h5>Junio 04 2023</h5>
 			<a
@@ -82,6 +82,12 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 			>
 				<h3>¿Quiénes descendieron a Segunda División?</h3>
 			</a>
+			
+			<ul>
+				<li>Elche,</li>
+				<li>Espanyol y</li>
+				<li>Valladolid</li>
+			</ul>
 			<p>
 				Tras una pésima campaña, el primer equipo en descender fue el
 				Elche, que demoró 20 partidos en conseguir su primera victoria.
@@ -93,12 +99,6 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 				tercer club fue el Valladolid: empataron sin goles ante Getafe y
 				jugarán la Segunda División, el próximo ciclo.
 			</p>
-
-			<ul>
-				<li>Elche</li>
-				<li>Espanyol</li>
-				<li>Valladolid</li>
-			</ul>
 			<img
 				src="https://www.mundodeportivo.com/files/image_948_465/uploads/2023/06/04/647cf9cd8a454.jpeg"
 				width="500"

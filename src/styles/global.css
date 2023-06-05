@@ -83,7 +83,7 @@ html {
     top: 5rem;
     left: 48px;
     background-color: #ff9776;
-    display: none;
+    display: flex;
     margin: 0;
   }
   
@@ -105,8 +105,8 @@ html {
     display: unset;
   }
   
-  @media screen and (min-width: 636px) {
-    .nav-links {
+@media screen and (min-width: 636px) {
+  .nav-links {
       margin-left: 5em;
       display: block;
       position: static;
@@ -114,17 +114,17 @@ html {
       background: none;
     }
   
-    .nav-links a {
+  .nav-links a {
       display: inline-block;
       padding: 15px 20px;
     }
   
-    .hamburger {
+  .hamburger {
       display: none;
     }
   }
 html.dark {
-    background-color: #0d0950;
+    background-color: #1c1951;
     color: #fff;
 }
   
