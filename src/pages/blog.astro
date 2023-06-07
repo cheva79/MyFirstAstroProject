@@ -8,11 +8,14 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 
 <style>
 	p {
-		text-align: justify;
+		text-align: top;
 	}
 	div {
 		display: flex;
+		flex-direction: row;
 		justify-content: center;
+		position: relative;
+		top: 10px;
 	}
 	section {
 		padding: 10px;
@@ -21,8 +24,8 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 	}
 </style>
 <BaseLayout pageTitle={pageTitle}>
+	<h3>Mira los Twittazos de:</h3>
 	<div class="div-blog">
-		<h3>Mira los Twittazos de:</h3>
 		<!-- <section>
 			<h5>Junio 03 2023</h5>
 			<a
@@ -135,12 +138,27 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 			/>
 		</section> -->
 		<section>
-			<a class="twitter-timeline" href="https://twitter.com/MatteMoretto?ref_src=twsrc%5Etfw">Tweets by MatteMoretto</a> 
-			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<a
+				class="twitter-timeline"
+				href="https://twitter.com/MatteMoretto?ref_src=twsrc%5Etfw"
+				>Tweets by MatteMoretto</a
+			>
+			<script
+				async
+				src="https://platform.twitter.com/widgets.js"
+				charset="utf-8"></script>
 		</section>
+
 		<section>
-			<a class="twitter-timeline" href="https://twitter.com/FabrizioRomano?ref_src=twsrc%5Etfw">Tweets by FabrizioRomano</a> 
-			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<a
+				class="twitter-timeline"
+				href="https://twitter.com/FabrizioRomano?ref_src=twsrc%5Etfw"
+				>Tweets by FabrizioRomano</a
+			>
+			<script
+				async
+				src="https://platform.twitter.com/widgets.js"
+				charset="utf-8"></script>
 		</section>
 	</div>
 </BaseLayout>
