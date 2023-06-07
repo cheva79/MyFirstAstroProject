@@ -22,7 +22,8 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 </style>
 <BaseLayout pageTitle={pageTitle}>
 	<div class="div-blog">
-		<section>
+		<h3>Mira los Twittazos de:</h3>
+		<!-- <section>
 			<h5>Junio 03 2023</h5>
 			<a
 				href="https://www.sport.es/es/noticias/futbol-internacional/hilal-quiere-anunciar-fichaje-leo-88247528"
@@ -132,7 +133,7 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 				width="500"
 				alt=""
 			/>
-		</section>
+		</section> -->
 		<section>
 			<a class="twitter-timeline" href="https://twitter.com/MatteMoretto?ref_src=twsrc%5Etfw">Tweets by MatteMoretto</a> 
 			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -162,10 +163,10 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 	<li>-</li>
 	<li><a href="https://www.laliga.com/noticias?page=1">La Liga</a></li>
 </ul>
-<ul>
+<!-- <ul>
 	{
 		allPosts.map((post) => (
 			<BlogPost url={post.url} title={post.frontmatter.title} />
 		))
 	}
-</ul>
+</ul> -->

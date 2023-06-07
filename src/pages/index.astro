@@ -1,8 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "La Liga";
+localStorage.CountVisit
 ---
-
+<!-- <script>
+	import "../scripts/counter.js";
+</script> -->
 <BaseLayout pageTitle={pageTitle}>
 	<a
 		><img
@@ -220,5 +223,10 @@ const pageTitle = "La Liga";
 			</tr>
 		</table>
 	</div>
+	<!-- <h1>Counter of visits: {localStorage.CountVisit}</h1>
+	<script>
+		console.log('Prueba Console log: ',localStorage.CountVisit)
+	</script> -->
+
 
 </BaseLayout>
