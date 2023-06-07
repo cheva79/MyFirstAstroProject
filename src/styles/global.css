@@ -90,7 +90,7 @@ td {
 .nav-links a {
   display: block;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 10px;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
