@@ -16,129 +16,25 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 		justify-content: center;
 		position: relative;
 		top: 10px;
+		
 	}
 	section {
 		padding: 10px;
 		border: 10px;
 		margin: 2px;
+		background-color: rgb(78, 4, 43);
+	}
+
+	h3 {
+		background-color: rgb(240, 215, 204);
 	}
 </style>
 <BaseLayout pageTitle={pageTitle}>
-	<a href="https://wa.me/573124944653?text=Me%20encanta%20tu%20pagina%20tiene%20mucho%20estilo"><button><img src="https://img.freepik.com/free-icon/whatsapp_318-164852.jpg?size=626&ext=jpg" width="30" alt=""></button></a>
+	
 	<h3>Mira los Twittazos de:</h3>
 	<div class="div-blog">
-		<!-- <section>
-			<h5>Junio 03 2023</h5>
-			<a
-				href="https://www.sport.es/es/noticias/futbol-internacional/hilal-quiere-anunciar-fichaje-leo-88247528"
-			>
-				<h3>
-					Al-Hilal quiere anunciar el fichaje de Leo Messi el 6 de
-					junio
-				</h3></a
-			>
-
-			<p>
-				El equipo de Arabia Saudí Al-Hillal tiene la intención de
-				anunciar el fichaje de Leo Messi el próximo martes 6 de junio,
-				según ha podido saber SPORT de fuentes que provienen del seno
-				del club. El Al-Hilal se ha puesto esta fecha como clave para
-				tener el sí definitivo del jugador y poder activar todo el
-				protocolo preparado con el fin de que la noticia tenga un eco
-				mundial y, al mismo tiempo, sirva para empezar a exhibir Arabia
-				Saudí al mundo.
-			</p>
-			<img
-				src="https://estaticos-cdn.sport.es/clip/d7a3223c-baf2-4899-a1a3-a8c1b3334bf1_16-9-aspect-ratio_default_0.jpg"
-				width="500"
-				alt=""
-			/>
-		</section>
-
-		<section>
-			<h5>Junio 04 2023</h5>
-			<a
-				href="https://www.marca.com/futbol/real-madrid/2023/06/04/647c6247c83c250028cf903e-directo.html"
-			>
-				<h3>
-					Benzema se va del Real Madrid | Última hora y reacciones a
-					la salida de Karim a Arabia Saudí, en directo
-				</h3></a
-			>
-
-			<p>
-				El francés termina su etapa en el club blanco como titular
-				frente al Athletic de Bilbao en el partido que se disputa esta
-				tarde en el Santiago Bernabéu. La afición podrá despedirse del
-				capitán. ¿Habrá ovación en el minuto 9?
-			</p>
-			<img
-				src="https://phantom-marca.unidadeditorial.es/cf9749522892d64021f834e3a95bf188/resize/660/f/webp/assets/multimedia/imagenes/2023/06/04/16858816047586.jpg"
-				width="500"
-				alt=""
-			/>
-		</section>
-	</div>
-	<div class="div-blog">
-		<section>
-			<h5>Junio 04 2023</h5>
-			<a
-				href="https://depor.com/futbol-internacional/espana/quienes-descienden-hoy-a-la-segunda-division-en-espana-resultados-de-la-ultima-jornada-de-laliga-deportes-noticia/"
-			>
-				<h3>¿Quiénes descendieron a Segunda División?</h3>
-			</a>
-			
-			<ul>
-				<li>Elche,</li>
-				<li>Espanyol y</li>
-				<li>Valladolid</li>
-			</ul>
-			<p>
-				Tras una pésima campaña, el primer equipo en descender fue el
-				Elche, que demoró 20 partidos en conseguir su primera victoria.
-				Sus números fueron de terror: ganó cinco, empató diez y perdió
-				23. Fueron un total 24 unidades y terminaron en el fondo de la
-				tabla de posiciones. El segundo equipo condenado fue el
-				Espanyol, que vio a su clásico rival ganar LaLiga en su casa. El
-				equipo de la ciudad de Barcelona finalizó con 37 unidades. El
-				tercer club fue el Valladolid: empataron sin goles ante Getafe y
-				jugarán la Segunda División, el próximo ciclo.
-			</p>
-			<img
-				src="https://www.mundodeportivo.com/files/image_948_465/uploads/2023/06/04/647cf9cd8a454.jpeg"
-				width="500"
-				alt=""
-			/>
-		</section>
-		<section>
-			<h5>Junio 04 2023</h5>
-			<a
-				href="https://www.fcbarcelona.es/es/futbol/primer-equipo/noticias/3344756/el-fc-barcelona-campeon-de-liga-202223"
-			>
-				<h3>
-					Asi cierra la Liga y ¡El FC Barcelona, campeón de Liga
-					2022/23! El FC Barcelona conquista la 27ª Liga de su
-					historia, la primera con Xavi en el banquillo
-				</h3></a
-			>
-			<p>
-				Para Xavi es también su novena Liga. Ganó hasta ocho como
-				jugador (1998/99, 2004/05, 2005/06, 2008/09, 2010/11, 2012/13 y
-				2014/15) y ahora añade una más como entrenador. Lo hace como
-				técnico de una plantilla que destaca por su juventud, liderada
-				por Pedri, Gavi, Araujo y compañía, una generación que seguro
-				seguirá repartiendo alegrías entre el barcelonismo. También es
-				un título especial para Sergio Busquets, que se despedirá del FC
-				Barcelona habiendo ganado hasta 32, tras haber anunciado esta
-				semana que a final de temporada dejará al Club.
-			</p>
-			<img
-				src="https://www.fcbarcelona.com/photo-resources/2023/05/14/fced460a-baa2-4417-a8a2-fcfdd56dcfcf/mini_WEB.PNG?width=1200&height=750"
-				width="500"
-				alt=""
-			/>
-		</section> -->
-		<section>
+		
+		<section class="Section1">
 			<a
 				class="twitter-timeline"
 				href="https://twitter.com/MatteMoretto?ref_src=twsrc%5Etfw"
@@ -148,9 +44,10 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 				async
 				src="https://platform.twitter.com/widgets.js"
 				charset="utf-8"></script>
+			
 		</section>
 
-		<section>
+		<section class="Section2">
 			<a
 				class="twitter-timeline"
 				href="https://twitter.com/FabrizioRomano?ref_src=twsrc%5Etfw"
