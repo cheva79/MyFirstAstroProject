@@ -12,6 +12,9 @@ body {
   align-items: center;
   text-align: center;
 }
+h1 {
+  color: rgb(78, 4, 43);
+}
 
 div {
   align-items: center;
@@ -86,6 +89,7 @@ td {
   background-color: #f5d4ca;
   display: flex;
   margin: 0;
+  
 }
 
 .nav-links a {
@@ -96,6 +100,7 @@ td {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: rgb(78, 4, 43);
 }
 
 .nav-links a:hover,
