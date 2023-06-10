@@ -3,6 +3,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Champions League";
 localStorage.CountVisit;
 ---
+<script src="../scripts/mycountdown.js"></script>
+<script src="../scripts/simplyCountdown.min.js"></script>
 <style>
 	.portada {
 	width: 100%;
@@ -19,6 +21,7 @@ localStorage.CountVisit;
 	justify-content: center;
 	text-align: center;
 	transition: .5s ease-out all;
+	margin-bottom: 100px;
 }
 .portada.oculta {
 	transform: translateY(100%);
@@ -56,6 +59,8 @@ localStorage.CountVisit;
 <!-- <script>
 	import "../scripts/counter.js";
 </script> -->
+
+<!-- <div class="portada" id="cuenta"></div> -->
 <BaseLayout pageTitle={pageTitle}>
 	<a
 		><img
@@ -64,7 +69,7 @@ localStorage.CountVisit;
 		/>
 	</a>
 	<h2>Final</h2>
-	<div class="portada" id="cuenta"></div>
+
 	<img
 		style='border-radius: 50%;border:4px solid teal; padding:20px';
 		src="https://media.telemundo62.com/2023/06/TLMD-previa-final-champions.jpg?quality=85&strip=all&resize=850%2C478"
@@ -83,6 +88,5 @@ localStorage.CountVisit;
 		console.log('Prueba Console log: ',localStorage.CountVisit)
 	</script> -->
 </BaseLayout>
-<script src="../scripts/mycountdown.js"></script>
-<script src="../scripts/simplyCountdown.min.js"></script>
+
 
