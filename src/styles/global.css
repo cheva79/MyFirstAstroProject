@@ -32,7 +32,8 @@ h1 {
 
 ul li {
   display: inline;
-  padding: 50px
+  padding: 1px
+  
 }
 
 table {
@@ -89,6 +90,7 @@ td {
   background-color: #f5d4ca;
   display: flex;
   margin: 0;
+  justify-content: center;
   
 }
 
