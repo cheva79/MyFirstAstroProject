@@ -50,6 +50,7 @@ table {
   background-color: #94ab66;
   color: #ffffff;
   text-align: left;
+  align-self: center;
 }
 
 tr {
