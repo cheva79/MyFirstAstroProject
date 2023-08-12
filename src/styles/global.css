@@ -6,12 +6,16 @@ html {
 body {
   margin: 0 auto;
   width: 100%;
-  max-width: 80ch;
+  max-width: 100vw;
   padding: 1rem;
   line-height: 1.5;
   align-items: center;
   text-align: center;
 }
+header {
+  display: block;
+}
+
 h1 {
   color: rgb(78, 4, 43);
 }
@@ -70,24 +74,24 @@ td {
 
 /* nav styles */
 
-.hamburger {
+/* .hamburger {
   padding-right: 20px;
   cursor: pointer;
-}
+} */
 
-.hamburger .line {
+/* .hamburger .line {
   display: block;
   width: 40px;
   height: 5px;
   margin-bottom: 10px;
   background-color: #ff9776;
-}
+} */
 
 .nav-links {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #f5d4ca;
+  background-color: #03312a;
   display: flex;
   margin: 0;
   justify-content: center;
@@ -102,12 +106,13 @@ td {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: rgb(78, 4, 43);
+  color: #bbf6ed;
 }
 
-.nav-links a:hover,
+/* .nav-links  */
+a:hover,
 a:focus {
-  background-color: #ff9776;
+  background-color: #4d9f92;
 }
 
 .expanded {
@@ -128,9 +133,16 @@ a:focus {
     padding: 15px 20px;
   }
 
-  .hamburger {
+  /* .hamburger {
     display: none;
-  }
+  } */
+  /* .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #ff9776;
+  } */
 
   .div-blog {
     display: inline-block;
@@ -147,3 +159,4 @@ html.dark {
 .dark .nav-links a {
   color: #fff;
 }
+

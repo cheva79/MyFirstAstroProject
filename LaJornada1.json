@@ -1,0 +1,74 @@
+{
+    "Fecha": {
+        "0": "VIE  12.08.2022",
+        "1": "S\u00c1B  13.08.2022",
+        "2": "S\u00c1B  13.08.2022",
+        "3": "S\u00c1B  13.08.2022",
+        "4": "DOM  14.08.2022",
+        "5": "DOM  14.08.2022",
+        "6": "DOM  14.08.2022",
+        "7": "LUN  15.08.2022",
+        "8": "LUN  15.08.2022",
+        "9": "LUN  15.08.2022"
+    },
+    "Hora": {
+        "0": "14:00",
+        "1": "10:00",
+        "2": "12:00",
+        "3": "14:00",
+        "4": "10:30",
+        "5": "12:30",
+        "6": "15:00",
+        "7": "10:30",
+        "8": "12:30",
+        "9": "14:30"
+    },
+    "Resultado Local": {
+        "0": "2",
+        "1": "2",
+        "2": "0",
+        "3": "0",
+        "4": "0",
+        "5": "1",
+        "6": "1",
+        "7": "0",
+        "8": "0",
+        "9": "3"
+    },
+    "Resultado Visitante": {
+        "0": "1",
+        "1": "2",
+        "2": "3",
+        "3": "0",
+        "4": "1",
+        "5": "0",
+        "6": "2",
+        "7": "0",
+        "8": "3",
+        "9": "0"
+    },
+    "Equipo Local": {
+        "0": "CA Osasuna",
+        "1": "RC Celta",
+        "2": "Real Valladolid CF",
+        "3": "FC Barcelona",
+        "4": "C\u00e1diz CF",
+        "5": "Valencia CF",
+        "6": "UD Almer\u00eda",
+        "7": "Athletic Club",
+        "8": "Getafe CF",
+        "9": "Real Betis"
+    },
+    "Equipo Visitante": {
+        "0": "Sevilla FC",
+        "1": "RCD Espanyol de Barcelona",
+        "2": "Villarreal CF",
+        "3": "Rayo Vallecano",
+        "4": "Real Sociedad",
+        "5": "Girona FC",
+        "6": "Real Madrid",
+        "7": "RCD Mallorca",
+        "8": "Atl\u00e9tico de Madrid",
+        "9": "Elche CF"
+    }
+}
