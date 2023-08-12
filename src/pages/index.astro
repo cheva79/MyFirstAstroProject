@@ -9,11 +9,37 @@ localStorage.CountVisit;
 </script> --><!-- <div class="portada" id="cuenta"></div> -->
 <BaseLayout pageTitle={pageTitle}>
 
+	<section>
+		<select name="Jornada" id="SelectJornada">
+			<option value="Jornada1">Jornada 1</option>
+			<option value="Jornada2">Jornada 2</option>
+			<option value="Jornada3">Jornada 3</option>
+			<option value="Jornada4">Jornada 4</option>
+			<option value="Jornada5">Jornada 5</option>
+			<option value="Jornada6">Jornada 6</option>
+		</select>
+		<button name="ButtonJornada" id="ButtonJornada">Buscar</button>
+					
+		<table>
+			<thead>
+				<tr>
+					<th>Fecha</th>
+					<th>Hora</th>
+					<th>Resultado Local</th>
+					<th>Vs</th>
+					<th>Resultado Visitante</th>
+					<th>Equipo Local</th>
+					<th>Equipo Visitante</th>
+				</tr>
+				<!-- <tr>
+					<td id="tdFecha"></td>
+				</tr> -->
+			</thead>
+			<tbody id="data-output">
 
+			</tbody>    
+		</table>
+		<div id="div"></div>
+	</section>
 
-	<!-- <h1>Counter of visits: {localStorage.CountVisit}</h1>
-	<script>
-		console.log('Prueba Console log: ',localStorage.CountVisit)
-	</script> -->
-	<!-- D:\Personal\Astro_JS\tremendous-trappist\src\BB_f1db64fb-f7c8-4575-ae04-f675104330af_FPpreview.mp4 -->
 </BaseLayout>
