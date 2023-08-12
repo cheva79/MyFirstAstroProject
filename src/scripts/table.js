@@ -2,11 +2,11 @@
 let selectOption = document.getElementById('SelectJornada')
 
 let ButtonJornada = document.getElementById("ButtonJornada");
-console.log('SelectOption:',selectOption)
+console.log('SelectOption:',selectOption.value)
 
-ButtonJornada.addEventListener("click",() => {
+ButtonJornada.addEventListener("click",async() => {
     let file = selectOption.value 
-    fetch('../datatable/La'+file+'.json')
+    await fetch('../datatable/La'+file+'.json') 
     .then((response) => response.json())
     .then((json) => {
         var table = document.getElementById("data-output")  
