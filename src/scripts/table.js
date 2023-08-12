@@ -6,7 +6,7 @@ console.log('SelectOption:',selectOption)
 
 ButtonJornada.addEventListener("click",() => {
     let file = selectOption.value 
-    fetch('./La'+file+'.json')
+    fetch('../datatable/La'+file+'.json')
     .then((response) => response.json())
     .then((json) => {
         var table = document.getElementById("data-output")  
