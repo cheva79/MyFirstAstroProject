@@ -5,8 +5,16 @@
     Access-Control-Allow-Methods = "*"
     Access-Control-Allow-Headers = "*"
 
+[build]
+	publish = "dist"
 
-# Include all files in all functions
+[dev]
+	publish = "dist"
+	port= 8080
+
+
+
 [functions]
-  included_files = ["datatable/**"]
-
+	directory = "functions"
+	node_bundler = "esbuild" 
+	included_files = ["./src/datatable/*.json"]
