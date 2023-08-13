@@ -6,8 +6,7 @@
     Access-Control-Allow-Headers = "*"
 
 
+# Include all files in all functions
 [functions]
-
- directory = "myfunctions/"
-included_files = ["datatable/*.json"]
+  included_files = ["datatable/**"]
 
