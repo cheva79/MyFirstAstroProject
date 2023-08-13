@@ -8,6 +8,6 @@
 
 [functions]
 
-directory = "src"
+ directory = "myfunctions/"
 included_files = ["datatable/*.json"]
 
