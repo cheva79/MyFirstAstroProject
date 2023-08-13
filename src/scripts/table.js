@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(){
     ButtonJornada.addEventListener("click", async () => {
         let file = selectOption.value 
 
-        const data = await fetch('../dist/src/datatable/La'+file).then((response) =>
+        const data = await fetch('./dist/La'+file).then((response) =>
             response.json())
             console.log(data);
             // .then((json) => {
