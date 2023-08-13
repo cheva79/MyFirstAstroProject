@@ -1,3 +1,16 @@
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "*"
+    Access-Control-Allow-Headers = "*"
+
+
+[build]
+
+functions = "functions"
+included_files = ["datatable/*.json"]
+
 [functions]
 directory = “functions”
-included_files = [“*/*.json”]
+included_files = [“/*.json”]
