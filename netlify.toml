@@ -11,6 +11,3 @@
 functions = "functions"
 included_files = ["datatable/*.json"]
 
-[functions]
-directory = “functions”
-included_files = [“/*.json”]
