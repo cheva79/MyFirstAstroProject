@@ -5,13 +5,6 @@
     Access-Control-Allow-Methods = "*"
     Access-Control-Allow-Headers = "*"
 
-[build]
-	publish = "/"
-
-[dev]
-	publish = "/"
-	port= 8080
-
 
 
 [functions]
