@@ -6,10 +6,10 @@
     Access-Control-Allow-Headers = "*"
 
 [build]
-	publish = "dist"
+	publish = "/"
 
 [dev]
-	publish = "dist"
+	publish = "/"
 	port= 8080
 
 
