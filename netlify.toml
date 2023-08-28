@@ -4,6 +4,13 @@
     Access-Control-Allow-Origin = "*"
     Access-Control-Allow-Methods = "*"
     Access-Control-Allow-Headers = "*"
+[build]
+	publish = "/dist"
+
+[dev]
+	publish = "/dist"
+	port= 8080
+
 
 
 
